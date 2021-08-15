@@ -1,0 +1,161 @@
+*{
+    padding: 20;
+    margin: auto;
+    
+
+}
+img{
+    border-radius: 10%;
+
+}
+
+.header{
+    color:greenyellow;
+    padding-top: 20px;
+}
+.s1{
+    background-color:navy;
+    color:lightblue;
+    border-radius: .5rem;
+}
+
+.icons{
+    padding: 10px;
+    
+}
+.icons a i{
+    color:greenyellow;
+    margin: 20px;
+    font-size: 40px;
+}
+
+
+
+.introduction{
+    font-size: 6mm;
+    color:greenyellow ;
+}
+
+.hobbies{
+    font-size: 6mm;
+    padding-bottom: 10px;
+    color:greenyellow;
+}
+
+.skills{
+    font-size: 5mm;
+    color:greenyellow;
+}
+
+.mobile{
+    color:greenyellow;
+}
+
+body{
+    background-color:rgb(8, 8, 14);
+    font-family: Georama;
+}
+.navbar{
+    display: flex;
+    background-color:navy;
+    border-radius: 2%;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.navbar-links ul{
+    display: flex;
+    font-size: 0.6cm;
+    
+}
+
+.navbar-links li{
+    list-style: none;
+    
+}
+
+.navbar-links ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    color:lightblue;
+}
+
+.name{
+    font-size: 1.2cm;
+    font-style:inherit;
+    color:lightblue;
+}
+.name:hover{
+    color:hotpink;
+    background-color:rgb(8, 8, 14);
+    border-radius: 0.1cm;
+    
+}
+.navbar-links li a:hover{
+    text-decoration: none;
+    color:hotpink;
+    background-color:rgb(8, 8, 14);
+    border-radius: 5mm;
+}
+
+    
+
+.toggle-button{
+    position: absolute;
+    top:.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    width:28px;
+    height: 18px;
+    justify-content: space-between;
+}
+
+.toggle-button .bar{
+    height: 4px;
+    width: 100%;
+    margin: .5px;
+    background-color:lightblue;
+    border-radius: 10px;
+}
+
+@media (max-width:400px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li{
+        text-align: center;
+    }
+
+    .navbar-links ul li a{
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    
+    
+    
+   
+       
+    
+}
